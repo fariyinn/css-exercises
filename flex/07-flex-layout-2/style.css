@@ -2,27 +2,98 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  /* set body to flex */
+  display: flex;
+  /* set flex direction of body to vertical */
+  flex-direction: column;
+}
+
+.main {
+  /* set main to flex */
+  display: flex;
+  /* set flex-grow to 1*/
+  flex: 1;
+}
+
+.container {
+  /* set display to flex */
+  display: flex;
+  /* set container to wrap */
+  flex-wrap: wrap;
+  /* add space around container */
+  padding: 32px;
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  /* change font weight to 900 */
+  font-weight: 900;
+  /* change font size to 32px */
+  font-size: 32px;
+  /* add space around header of 16px */
+  padding: 16px;
+  /* set header to flex */
+  display: flex;
+  /* set cross axis (vertical) alignment to center */
+  align-content: center;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  /* set footer to flex */
+  display: flex;
+  /* change flex direction of footer to vertical */
+  flex-direction: column;
+  /* set main axis (now vertical) alignment to center */
+  justify-content: center;
+  /* set cross axis (now horizontal) alignment to center */
+  align-items: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
+  /* set flex-shrink to 0 */
+  flex-shrink: 0;
+  /* add space around sidebar */
+  padding: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  /* add space around cards */
+  padding: 16px;
+  /* add space between cards */
+  margin: 16px;
+  /* assign width for each card */
+  width: 200px;
+}
+
+a {
+  /* remove line under links */
+  text-decoration: none;
+  /* change links color to white */
+  color: white;
+  /* change links size to 24px */
+  font-size: 24px;
+}
+
+ul {
+  /* remove bullet points from list items */
+  list-style: none;
+  /* remove default margin */
+  margin: 0;
+  /* remove default padding */
+  padding: 0;
+}
+
+li {
+  /* add space between links in sidebar */
+  margin: 10px 2px;
 }

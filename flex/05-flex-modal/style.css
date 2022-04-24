@@ -9,10 +9,27 @@ body {
   margin: 0;
   background: #aaa;
   color: #333;
-  /* I'll give you this one for free lol */
+  /* set body to flex */
   display: flex;
+  /* vertically align body to center */
   align-items: center;
+  /* horizontally align body to center */
   justify-content: center;
+}
+
+.header {
+  /* set container to flex */
+  display: flex;
+  /* set font weight to bold */
+  font-weight: bold;
+  /* set font size to larger than other text */
+  font-size: 20px;
+  /* align items vertically to center */
+  align-items: center;
+  /* align items horizontally to space between */
+  justify-content: space-between;
+  /* add space between bottom of header and other items */
+  margin-bottom: 10px;
 }
 
 .modal {
@@ -20,6 +37,17 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  /* set container to flex */
+  display: flex;
+  /* add space between items */
+  gap: 15px;
+  /* add space around edge of modal */
+  padding: 15px;
+}
+
+.text {
+  /* add space from buttons to text */
+  margin-bottom: 15px;
 }
 
 .icon {
@@ -33,6 +61,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* prevent icon from shrinking */
+  flex-shrink: 0;
 }
 
 .close-button {
